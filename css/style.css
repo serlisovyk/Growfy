@@ -766,3 +766,66 @@ body {
 }
 
 /* #endregion */
+/* #region Contact */
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: var(--gray-color-2);
+  border-radius: 30px;
+  padding: 52px 140px;
+}
+
+.contact__content {
+  max-width: 350px;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+
+.contact__text {
+  font-weight: 300;
+}
+
+.contact__btns {
+  display: flex;
+  gap: 32px;
+}
+
+@media (width <= 1080px) {
+  .contact__inner {
+    padding-inline: 100px;
+  }
+}
+
+@media (width <= 1023px) {
+  .contact__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-inline: 50px;
+  }
+}
+
+@media (width <= 767px) {
+  .contact__title {
+    font-size: 26px;
+  }
+}
+
+@media (width <= 500px) {
+  .contact__btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* #endregion */
