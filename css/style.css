@@ -1,4 +1,5 @@
 /* #region Core */
+
 @import url('reset.css');
 @import url('fonts.css');
 
@@ -7,12 +8,16 @@
   --text-color: #9c9c9c;
   --dark-color: #0d0d11;
   --gray-color: #81818b66;
+  --gray-color-2: #81818b;
+  --gray-color-2-hover: #6e6e78;
   --blue-color: #3d96f4;
+  --blue-color-hover: #1e6edc;
   --font-family: 'Poppins', sans-serif;
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--dark-color);
   color: var(--text-color);
 }
 
@@ -25,6 +30,117 @@ body {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 15px;
+}
+
+/* #endregion */
+/* #region Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.14em;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--blue-color);
+}
+
+.btn-primary:hover {
+  background: var(--blue-color-hover);
+}
+
+.btn-secondary {
+  background: var(--gray-color-2);
+}
+
+.btn-secondary:hover {
+  background: var(--gray-color-2-hover);
+}
+
+/* #endregion */
+/* #region Header */
+
+.header {
+  padding-block: 32px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav-link {
+  display: inline-block;
+  padding: 14px 10px;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 300;
+  color: #fff;
+}
+
+.header__nav-link:hover {
+  color: var(--blue-color);
+  transition: color 0.3s ease;
+}
+
+@media (width <= 991px) {
+  .header__content {
+    gap: 50px;
+  }
+}
+
+@media (width <= 820px) {
+  .header__content {
+    gap: 30px;
+  }
+
+  .header__nav-list {
+    gap: 10px;
+  }
+}
+
+@media (width <= 767px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__content {
+    gap: 20px;
+  }
+}
+
+@media (width <= 600px) {
+  .header__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (width <= 480px) {
+  .header__nav-link {
+    padding: 10px 5px;
+  }
 }
 
 /* #endregion */

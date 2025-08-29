@@ -1,3 +1,4 @@
+<!-- #region Head -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +7,45 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Growfy</title>
   </head>
-  <body>
-    <div class="wrapper"></div>
+  <body id="home">
+    <div class="wrapper">
+      <!-- #endregion -->
+      <!-- #region Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#home" class="header__logo">
+              <img
+                src="images/logo.svg"
+                alt="Growfy logo"
+                width="148"
+                height="40"
+                loading="lazy"
+              />
+            </a>
+            <div class="header__content">
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="#home" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#about" class="header__nav-link">About</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#testimonials" class="header__nav-link">Testimonials</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#services" class="header__nav-link">Services</a>
+                  </li>
+                </ul>
+              </nav>
+              <button type="button" class="btn btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- #endregion -->
+    </div>
   </body>
 </html>
