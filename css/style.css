@@ -1,0 +1,30 @@
+/* #region Core */
+@import url('reset.css');
+@import url('fonts.css');
+
+:root {
+  --white-color: #ffffff;
+  --text-color: #9c9c9c;
+  --dark-color: #0d0d11;
+  --gray-color: #81818b66;
+  --blue-color: #3d96f4;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+/* #endregion */
